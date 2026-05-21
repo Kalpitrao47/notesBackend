@@ -9,7 +9,6 @@ app.use(express.json())
 const cors = require('cors')
 
 app.use(cors());
-app.options("*", cors());
 const notesRouter = require('./router/notesRouter')
 
 app.use('/', notesRouter)
